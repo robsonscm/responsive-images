@@ -1,0 +1,116 @@
+/******* Main CSS File - Do all CSS setup here *******/
+html, body, h1, h2, h3, h4, ul, ol, li, p, a {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+html {
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: dimgrey;
+    background-repeat:no-repeat;
+    background: -webkit-linear-gradient( to left bottom, lightgrey, dimgrey);
+    background: -moz-linear-gradient( to left bottom, lightgrey, dimgrey);
+    background: -ms-linear-gradient( to left bottom, lightgrey, dimgrey);
+    background: -o-linear-gradient( to left bottom, lightgrey, dimgrey);
+    background: linear-gradient( to left bottom, lightgrey, dimgrey);
+}
+header {
+    width: 100%;
+    height: 30vw;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#efc5ca+0,d24b5a+50,ba2737+51,f18e99+100;Red+Gloss+%233 */
+    background: #efc5ca; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #efc5ca 0%, #d24b5a 50%, #ba2737 51%, #f18e99 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #efc5ca 0%,#d24b5a 50%,#ba2737 51%,#f18e99 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #efc5ca 0%,#d24b5a 50%,#ba2737 51%,#f18e99 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efc5ca', endColorstr='#f18e99',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    color: gold;
+    text-shadow: 2px 2px 0 #000;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+    h1 {
+        font-size: 9vw;
+    }
+body {
+    margin: 1rem;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Verdana","Arial","Helvetica",sans-serif;
+    color: #000;
+}
+    main {
+        margin: 0 auto;
+        background: white;
+    }
+        ul {
+            width: 100%;
+            padding: .5rem 0;
+        }
+            ul>li{
+                list-style-type: none;
+                text-align: center;
+                color: #6B767F;
+            }
+                ul>li>figure {
+                    box-shadow: 3px 3px 10px #ba2737;
+                    padding: 0.3rem;
+                    border-radius: 5%;
+                }
+                    ul>li>figure>figcaption {
+                        font-size: .8rem;
+                    }
+                    ul>li>figure>figcaption>a {
+                        text-decoration: none;
+                        font-weight: 700;
+                        color: #6B767F;
+                    }
+                    ul>li>figure>figcaption>a:hover {
+                        transition: all 0.5s ease-in-out;
+                        font-weight: 900;
+                        color: #ba2737;
+                    }
+                    picture, img {
+                        max-width: 90%;
+                    }
+    footer {
+        text-align: right;
+        padding-right: 1rem;
+        color: gold;
+        text-shadow: 3px 3px 2px darkred;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#efc5ca+0,d24b5a+50,ba2737+51,f18e99+100;Red+Gloss+%233 */
+        background: #efc5ca; /* Old browsers */
+        background: -moz-linear-gradient(45deg, #efc5ca 0%, #d24b5a 50%, #ba2737 51%, #f18e99 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(45deg, #efc5ca 0%,#d24b5a 50%,#ba2737 51%,#f18e99 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(45deg, #efc5ca 0%,#d24b5a 50%,#ba2737 51%,#f18e99 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efc5ca', endColorstr='#f18e99',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+@media screen and (min-width:600px){
+    header {
+        height: 7rem;
+    }
+        h1 {
+            font-size: 3rem;
+        }
+    ul>li{
+        width: 49%;
+        display: inline-block;
+    }
+        ul>li>figure>figcaption {
+            font-size: .7rem;
+        }
+}
+@media screen and (min-width:1200px){
+    h1 {
+        font-size: 4rem;
+    }
+    ul>li{
+        width: 24%;
+    }
+}
